@@ -19,9 +19,9 @@ app.use((req, res, next) => {
 	console.log(log);
 	next();
 });
-app.use((req, res, next) => {
-	res.render('maintance.hbs');
-});
+// app.use((req, res, next) => {
+// 	res.render('maintance.hbs');
+// });
 hbs.registerHelper('getCurrentYear', () => new Date().getFullYear());
 hbs.registerHelper('screamIt', (text) => text.toUpperCase());
 
